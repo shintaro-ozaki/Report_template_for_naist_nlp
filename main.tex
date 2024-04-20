@@ -1,0 +1,74 @@
+% 更新日2024年1月19日　by Tetsuaki Baba
+\documentclass[a4paper,uplatex]{jsarticle}
+% 学部は \documentclass[a4paper,uplatex]{jsarticle}を利用して，\section で論文を構成してください．
+% 修士、博士は \documentclass[a4paper,uplatex]{jsreport} を利用して， \chapter で論文を構成してください．
+
+\usepackage{iapaper}
+\usepackage[dvipdfmx]{graphicx,xcolor}
+\usepackage{listings}
+
+
+\begin{document}
+\pagenumbering{arabic} 
+\include{code_listings.tex}
+
+\title{レポート名}
+\vspace{350pt}
+\Yourname{尾崎慎太郎}
+\IDnumber{学生番号　2411066}
+\submissiondate{2024年1月31日}
+\maketitle
+
+\setcounter{page}{1} % 1から振り直す
+
+\report{課題の概要}
+
+\section{問題に関して}
+
+\section{問題に関して}
+
+
+
+% 箇条書き
+% \begin{itemize}
+% \item hoge
+% \item foo
+% \item bar
+% \end{itemize}
+
+% 箇条書き(番号付き)
+% \begin{enumerate}
+%     \item hoge
+%     \item fuga
+%     \item bar
+% \end{enumerate}
+
+% ソースコードの挿入
+% 詳細：　https://www.overleaf.com/learn/latex/Code_listing
+% \begin{lstlisting}[language=Javascript, caption=p5.js start sample, label={list:label}]
+% function setup() {
+%   createCanvas(400, 400);
+% }
+
+% function draw() {
+%   background(220);
+% }
+% \end{lstlisting}
+
+% \subsection{図表の入れ方}
+% 図\ref{fig:tmu_hino}のようにして記述すればok
+% \begin{figure}[t]
+%   \begin{center}
+%     \includegraphics[width=0.95\hsize]{./images/sample.jpg}
+%     \caption{東京都立大学日野キャンパス}
+%     \label{fig:tmu_hino}
+%   \end{center}
+% \end{figure}
+
+
+%%% 参考文献をbibtex形式で引用する場合は上記の参考文献箇所はコメントアウトし、以下をコメントインする。
+%%% junsrt: 引用順に文献番号を振る
+%%% jplain: アルファベット順に文献番号を振る
+\bibliographystyle{junsrt}
+\bibliography{references}
+\end{document}

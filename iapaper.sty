@@ -1,0 +1,45 @@
+% iapaper.sty
+% Please do not modify this file.
+% Revision: 2022/01/24
+% Revision: 2015/11/12
+% Copyright 2023, Tetsuaki Baba
+
+%\setlength{\voffset}{9.6mm} % 35mm-25.4mm
+\setlength{\voffset}{9.6mm} % 35mm-25.4mm
+%\setlength{\hoffset}{-0.4mm}
+\setlength{\topmargin}{0mm}
+\setlength{\headheight}{0mm}
+\setlength{\headsep}{0mm}
+
+\setlength{\oddsidemargin}{25mm}
+\addtolength{\oddsidemargin}{-1in}
+
+\setlength{\evensidemargin}{30mm}
+\addtolength{\evensidemargin}{-1in}
+
+\setlength{\marginparsep}{0mm}
+\setlength{\marginparwidth}{0mm}
+\setlength{\footskip}{10mm}
+\setlength{\baselineskip}{21.45pt}
+
+\setlength{\textwidth}{210mm}
+\addtolength{\textwidth}{-25mm}
+\addtolength{\textwidth}{-30mm}
+
+\setlength{\textheight}{297mm}
+\addtolength{\textheight}{-35mm}
+\addtolength{\textheight}{-35mm}
+
+
+
+\renewcommand{\title}[1]{\vspace{32pt}\begin{center}\huge{#1}\end{center}}
+\newcommand{\IDnumber}[1]{\begin{center}\large{#1} \end{center}}
+\newcommand{\submissiondate}[1]{\begin{center}#1\end{center}}
+\newcommand{\Yourname}[1]{\begin{center}\large{#1}  \\ \vspace{10.75pt} \large{NAIST　自然言語処理学研究室} \\ \end{center} }
+\newcommand{\makemokuji}{\clearpage \normalsize \tableofcontents　\fontsize{12pt}{21.45pt}\selectfont \thispagestyle{empty}  \clearpage}
+\newcommand{\report}[2]{  \begin{center} \Large{ \bf{#1}} \vspace{100pt} \end{center}}
+\newcommand{\summary}[2]{\clearpage  \begin{center} \Large{ \bf{#1 \\  #2}} \end{center}  Summary  \thispagestyle{empty}  \addcontentsline{toc}{section}{Summary} \\ }
+
+\renewcommand{\maketitle}{\thispagestyle{empty} \clearpage \fontsize{12pt}{21.45pt}\selectfont }
+
+
